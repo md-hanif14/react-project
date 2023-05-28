@@ -50,19 +50,19 @@ const Problem2 = () => {
 
 
                     <div>
-                        <button className="btn btn-lg btn-outline-warning" type="button" >US Contacts</button>
+                        <button onClick={handleShow2} className="btn btn-lg btn-outline-warning" type="button" >US Contacts</button>
 
                         <Modal show={show2} onHide={handleClose2}>
                             <Modal.Header closeButton>
-                                <Modal.Title>Modal A</Modal.Title>
+                                <Modal.Title>Modal B</Modal.Title>
                             </Modal.Header>
                             <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
                             <Modal.Footer>
                                 <Button variant="primary" onClick={handleClose2}>
-                                    All Contacts
+                                  US Contacts
                                 </Button>
                                 <Button variant="primary" onClick={handleClose2}>
-                                    US Contacts
+                                All Contacts 
                                 </Button>
                                 <Button variant="secondary" onClick={handleClose2}>
                                     Close
