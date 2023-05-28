@@ -54,7 +54,7 @@ const Problem2 = () => {
                             </Modal.Header>
                             <Modal.Body>
                                 {
-                                    allCountriesConts.map(allCountriesCont => <p>
+                                    allCountriesConts.map(allCountriesCont => <p key={allCountriesCont.id} >
                                         Country: {allCountriesCont.name} <br />
                                         Mobile Num: {allCountriesCont.mobileNumber}
                                     </p>)
@@ -81,11 +81,11 @@ const Problem2 = () => {
 
                         <Modal show={show2} onHide={handleClose2}>
                             <Modal.Header closeButton>
-                                <Modal.Title>Modal B</Modal.Title>
+                                <Modal.Title>Modal B(US)</Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
                                 {
-                                    usConts.map(usCont => <p>
+                                    usConts.map(usCont => <p key={usCont.id}>
                                         City: {usCont.city} <br />
                                         Mobile: {usCont.mobileNumber}
                                     </p> )
