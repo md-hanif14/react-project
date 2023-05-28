@@ -25,6 +25,14 @@ const Problem2 = () => {
             .then(data => setAllCountriesCont(data))
     }, [])
 
+    const[usConts, setUsConts] = useState([])
+
+    useEffect( ()=>{
+        fetch('US.json')
+        .then(res => res.json())
+        .then(data => setUsConts(data))
+    } , [])
+
 
 
 
@@ -75,7 +83,14 @@ const Problem2 = () => {
                             <Modal.Header closeButton>
                                 <Modal.Title>Modal B</Modal.Title>
                             </Modal.Header>
-                            <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                            <Modal.Body>
+                                {
+                                    usConts.map(usCont => <p>
+                                        City: {usCont.city} <br />
+                                        Mobile: {usCont.mobileNumber}
+                                    </p> )
+                                }
+                            </Modal.Body>
                             <Modal.Footer>
                                 <Button variant="primary" onClick={handleClose2}>
                                     US Contacts

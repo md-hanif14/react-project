@@ -1,0 +1,53 @@
+[
+    {
+      "id": "1",
+      "city": "New York",
+      "mobileNumber": "+1 (555) 123-4567"
+    },
+    {
+      "id": "2",
+      "city": "Los Angeles",
+      "mobileNumber": "+1 (555) 987-6543"
+    },
+    {
+      "id": "3",
+      "city": "Chicago",
+      "mobileNumber": "+1 (555) 246-8135"
+    },
+    {
+      "id": "4",
+      "city": "Houston",
+      "mobileNumber": "+1 (555) 369-2580"
+    },
+    {
+      "id": "5",
+      "city": "Philadelphia",
+      "mobileNumber": "+1 (555) 741-8529"
+    },
+    {
+      "id": "6",
+      "city": "Phoenix",
+      "mobileNumber": "+1 (555) 864-2097"
+    },
+    {
+      "id": "7",
+      "city": "San Antonio",
+      "mobileNumber": "+1 (555) 975-3104"
+    },
+    {
+      "id": "8",
+      "city": "San Diego",
+      "mobileNumber": "+1 (555) 503-1876"
+    },
+    {
+      "id": "9",
+      "city": "Dallas",
+      "mobileNumber": "+1 (555) 718-9462"
+    },
+    {
+      "id": "10",
+      "city": "San Jose",
+      "mobileNumber": "+1 (555) 639-8247"
+    }
+  ]
+  
