@@ -1,0 +1,53 @@
+[
+    {
+      "id": "1",
+      "name": "Afghanistan",
+      "mobileNumber": "+93"
+    },
+    {
+      "id": "2",
+      "name": "Albania",
+      "mobileNumber": "+355"
+    },
+    {
+      "id": "3",
+      "name": "Algeria",
+      "mobileNumber": "+213"
+    },
+    {
+      "id": "4",
+      "name": "Andorra",
+      "mobileNumber": "+376"
+    },
+    {
+      "id": "5",
+      "name": "Angola",
+      "mobileNumber": "+244"
+    },
+    {
+      "id": "6",
+      "name": "Argentina",
+      "mobileNumber": "+54"
+    },
+    {
+      "id": "7",
+      "name": "Armenia",
+      "mobileNumber": "+374"
+    },
+    {
+      "id": "8",
+      "name": "Australia",
+      "mobileNumber": "+61"
+    },
+    {
+      "id": "9",
+      "name": "Austria",
+      "mobileNumber": "+43"
+    },
+    {
+      "id": "10",
+      "name": "Azerbaijan",
+      "mobileNumber": "+994"
+    }
+  ]
+  

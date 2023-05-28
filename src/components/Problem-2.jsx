@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
@@ -16,6 +17,17 @@ const Problem2 = () => {
     const handleShow2 = () => setShow2(true);
 
 
+    const[allCountriesConts, setAllCountriesCont ] = useState([])
+
+    useEffect(() => {
+        fetch('allCountries.json')
+            .then(res => res.json())
+            .then(data => setAllCountriesCont(data))
+    }, [])
+
+
+
+
 
 
     return (
@@ -30,9 +42,15 @@ const Problem2 = () => {
 
                         <Modal show={show1} onHide={handleClose1}>
                             <Modal.Header closeButton>
-                                <Modal.Title>Modal A</Modal.Title>
+                                <Modal.Title>Modal A (All Countries)</Modal.Title>
                             </Modal.Header>
-                            <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                            <Modal.Body>
+                                {
+                                    allCountriesConts.map(allCountriesCont => <p>
+                                        Mobile Num: {allCountriesCont.mobileNumber}
+                                    </p>)
+                                }
+                            </Modal.Body>
                             <Modal.Footer>
                                 <Button variant="primary" onClick={handleClose1}>
                                     All Contacts
@@ -59,10 +77,10 @@ const Problem2 = () => {
                             <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
                             <Modal.Footer>
                                 <Button variant="primary" onClick={handleClose2}>
-                                  US Contacts
+                                    US Contacts
                                 </Button>
                                 <Button variant="primary" onClick={handleClose2}>
-                                All Contacts 
+                                    All Contacts
                                 </Button>
                                 <Button variant="secondary" onClick={handleClose2}>
                                     Close
