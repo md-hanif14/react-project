@@ -47,6 +47,7 @@ const Problem2 = () => {
                             <Modal.Body>
                                 {
                                     allCountriesConts.map(allCountriesCont => <p>
+                                        Country: {allCountriesCont.name} <br />
                                         Mobile Num: {allCountriesCont.mobileNumber}
                                     </p>)
                                 }
